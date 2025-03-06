@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(position_control)
+project(position_control_solution)
 find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_python REQUIRED)
 find_package(rclpy REQUIRED)
@@ -8,6 +8,7 @@ install(PROGRAMS
   nodes/kalman_filter.py
   nodes/ranges_debugger.py
   nodes/yaw_controller.py
+  nodes/euler_angle.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
